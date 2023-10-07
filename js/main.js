@@ -29,10 +29,10 @@ $(document).ready(function () {
 	});
 });
 
-//fetchPosts();
+fetchPosts();
 
 async function fetchPosts() {
-	var response = await fetch('https://localhost:7217/api/Posts');
+	var response = await fetch('https://petgarden-f030018191f7.herokuapp.com/api/Posts/sample-data');
 	var resJson = await response.json();
 
 	var posts = resJson;
